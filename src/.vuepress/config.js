@@ -51,16 +51,10 @@ module.exports = {
           children: [
             '',
             'deploy-server',
+            'deploy-admin'
           ]
         }
       ],
-      // '/config/': [{
-      //   title: 'Config',
-      //   collapsable: false,
-      //   children: [
-      //     '',
-      //   ]
-      // }],
       '/development/': [{
         title: 'Developement',
         collapsable: false,

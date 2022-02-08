@@ -1,4 +1,4 @@
-# Deploy to server
+# Deploy GS-server
 
 ```
   ____ ____                                     
