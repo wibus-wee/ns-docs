@@ -12,16 +12,16 @@ GitHub Repo: https://github.com/GS-server/
 
 ## Require environments
 
-- NodeJS
+- NodeJS 16
 - PNPM
 - MySQL
 - PM2
 
-## ENV setting
+## ENV settings
 
 
 
-## Run server in production (the first method)
+## Running in production (the first method)
 
 First, you need to clone `GS-server` to local server, then run commands
 
@@ -31,7 +31,7 @@ pnpm build
 pnpm prod:pm2
 ```
 
-## Run server in production (the second method)
+## Running in production (the second method)
 
 ```bash
 pnpm i
@@ -39,7 +39,7 @@ pnpm build
 pnpm start
 ```
 
-## Run server in development
+## Running in development
 
 ```bash
 pnpm i
