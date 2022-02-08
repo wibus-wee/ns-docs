@@ -7,7 +7,7 @@
 | |_| |___) |_____\__ \  __/ |   \ V /  __/ |   
  \____|____/      |___/\___|_|    \_/ \___|_| 
  
-GitHub Repo: https://github.com/GS-server/
+GitHub Repo: https://github.com/wibus-wee/GS-server/
 ```
 
 ## Require environments
