@@ -9,7 +9,11 @@
   },
   "scripts": {
     "dev": "vuepress dev src",
-    "build": "vuepress build src"
+    "build": "vuepress build src",
+    "lint-md": "yarn lint-md:style && yarn lint-md:wording",
+    "lint-md:style": "remark --quiet --frail .",
+    "lint-md:wording": "textlint ./src/**/*.md",
+    "show-help": "vuepress --help"
   },
   "license": "MIT",
   "devDependencies": {

@@ -3,7 +3,7 @@
  * @author: Wibus
  * @Date: 2022-02-09 08:48:10
  * @LastEditors: Wibus
- * @LastEditTime: 2022-02-09 08:48:11
+ * @LastEditTime: 2022-02-09 09:12:24
  * Coding With IU
  */
 module.exports = {
@@ -18,7 +18,7 @@ module.exports = {
     },
     terminology: {
       terms: [
-        "VuePress",
+        "GoldenSpace",
         "sass",
         [
           "front[- ]matter",
