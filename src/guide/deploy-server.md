@@ -12,7 +12,7 @@ GitHub Repo: https://github.com/wibus-wee/GS-server/
 
 ## Require environments
 
-- NodeJS 16
+- Node.js 16
 - PNPM
 - MySQL
 - PM2
@@ -21,7 +21,7 @@ GitHub Repo: https://github.com/wibus-wee/GS-server/
 
 - `DB_HOST`: database address (typically <thin>127.0.0.1</thin>)
 - `DB_PORT`: database port (usually <thin>3306</thin>)
-- `DB_USERNAME`: specifies the database user name.
+- `DB_USERNAME`: specifies the database username.
 - `DB_PASS`: specifies the database password
 - `DB_DATABASE`: specifies the name of a database table
 - `MAIL_SERVER`: indicates the mailbox server
@@ -56,15 +56,15 @@ pnpm i
 pnpm start:dev # recommended
 ```
 
-if application run error, you can try delete `dist` directory or make an issue in [GitHub Repo](https://github.com/GS-server/issues)
+if application run error, you can try delete `dist` directory or make an issue in [GitHub repository](https://github.com/GS-server/issues)
 
 ## Some tips in development
 
 1. You can open [https://localhost:3000/api-docs](https://localhost:3000/api-docs) to debug interfaces
-1. You can get api documents json on [https://localhost:3000/api-docs-json](https://localhost:3000/api-docs-json)
-2. If you don't have server to run GS-server, you can use the application on vercel: [https://gs-server.vercel.app](https://gs-server.vercel.app). You can deploy it on vercel too.
+1. You can get API documents json on [https://localhost:3000/api-docs-json](https://localhost:3000/api-docs-json)
+2. If you don’t have server to run GS-server, you can use the application on vercel: [https://gs-server.vercel.app](https://gs-server.vercel.app). You can deploy it on vercel too.
 
 ## Use GitHub Action to build Server
 
-All of these steps have been removed because the package size is so large and it doesn't really effects for your server if you don't include `modules`
+All of these steps have been removed because the package size is so large and it doesn’t really effects for your server if you don’t include `modules`
 

@@ -2,7 +2,7 @@
 
 ![](https://gitee.com/wibus/blog-assets-goo/raw/master/asset-pic/20220208121020.jpg)
 
-GoldenSpace is a collection of projects, frontend runs separately from the backend. It's convenient for developers and ~~it can avoid you to quarrel with people in other fields.~~
+GoldenSpace is a collection of projects, frontend runs separately from the backend. It’s convenient for developers and ~~it can avoid you to quarrel with people in other fields.~~
 
 It has a high degree of development freedom, you can develop your own front/middle background through the interface.
 

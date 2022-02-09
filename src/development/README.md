@@ -1,12 +1,12 @@
 # Writing frontend projects
 
-The system takes the form of a frontend and backend separation without providing `template rendering options`, so front-end projects can be designed using any **framework** and **architecture**. 
+The system takes the form of a frontend and backend separation without providing `template rendering options`, so developers can design frontend projects using any **framework** and **architecture**. 
 
-However, although the development is relatively free, there are also many inconveniences, such as <u>interface call and data definition, routing convention</u>. So in this section, I'll go over how to develop front-end projects.
+Although the development is free, there are also inconveniences, such as <u>interface call and data definition, routing convention</u>. In this section, I’ll go over how to develop frontend projects.
 
 ## Routing convention
 
-The routing convention can greatly ensure that the site due to the **replacement** of different front-end topics lead to SEO abnormalities, dead links and other problems.
+The routing convention can greatly ensure that the site because the **replacement** of different frontend topics lead to SEO abnormalities, dead links and other problems.
 
 | Path                     | Descrition                             | Mark        |
 | ------------------------ | -------------------------------------- | ----------- |
@@ -25,13 +25,13 @@ The routing convention can greatly ensure that the site due to the **replacement
 | `/sitemap`               | Site map                               | Recommended |
 | `/timeline`              | Timeline                               | Option      |
 | `/recently`              | Dynamic page                           | Option      |
-| `/favorite/:type`        | Additional page                        | Option      |
+| `/favorite/:type`        | Others page                            | Option      |
 | `/projects`              | Projects page                          | Option      |
 | `/projects/:id`          | Projects details page                  | Option      |
 
 ## Options and suggestions on the framework
 
-It is recommended to choose the modern framework with SSR function：
+Recommended to choose the modern framework with SSR function：
 
 - React：NextJS, [RakkasJS](https://github.com/rakkasjs/rakkasjs), umi
 - Vue: Vite (vite-ssr), NuxtJS

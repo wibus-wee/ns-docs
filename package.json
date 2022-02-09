@@ -8,7 +8,7 @@
     "email": "wibus@qq.com"
   },
   "scripts": {
-    "dev": "vuepress dev src",
+    "dev": "vuepress dev src --temp .temp",
     "build": "vuepress build src",
     "lint-md": "yarn lint-md:style && yarn lint-md:wording",
     "lint-md:style": "remark --quiet --frail .",

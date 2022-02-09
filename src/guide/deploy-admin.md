@@ -12,7 +12,7 @@ GitHub Repo: https://github.com/wibus-wee/GS-admin/
 
 ## Require environments
 
-- NodeJS 16
+- Node.js 16
 - PNPM
 
 ## ENV settings
@@ -28,7 +28,7 @@ pnpm i
 pnpm dev
 ```
 
-After you save a file, all the system will reload at once. Because of React & NextJS, the speed is fast. You won't have time to ~~"touch fish"~~
+After you save a file, all the system will reload at once. Because of React & NextJS, the speed is fast. You won’t have time to ~~"touch fish"~~
 
 ## Building in production
 
@@ -41,6 +41,6 @@ That you can find `dist` on your root directory. Take it out to your server and 
 
 ## Why applications return Timeout?
 
-First, You should check to see if the API service is running. Also, you should check your API service [ENV setting](/guide/deploy-server.html#env-settings) of cors. In addtion, you may check GS-admin [ENV setting](/guide/deploy-admin.html#env-settings)
+First, You should check to see if the API service is running. Also, you should check your API service [ENV setting](/guide/deploy-server.html#env-settings) of cors. In addition, you may check GS-admin [ENV setting](/guide/deploy-admin.html#env-settings)
 
-If everything above is checked and there is no problem, please send a issues to [GitHub Repo](https://github.com/wibus-wee/GS-admin/issues)
+If everything above is checked and there is no problem, please send a issues to [GitHub repository](https://github.com/wibus-wee/GS-admin/issues)

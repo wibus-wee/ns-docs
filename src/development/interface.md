@@ -2,18 +2,18 @@
 
 ## Lists for pages / posts API
 
-If you want to get the lists of pages/posts, you need to pay attention to `Query Params`
+To get the lists of pages/posts, you need to pay attention to `Query Params`
 
 The GET request for this interface (/list) requires:
 
 - Type parameter
   - `all` (display all, **default**)
-  - `num` (return length only)
+  - `num` (return length)
   - `list` (returns the list without returning the contents)
   - `limit` (limit the list length, need to cooperate with `query.page`)
 - Page parameter (when type is `limit`)
 
-<gray>Query is seriously flawed and must be banned</gray>
+<gray>Query is flawed and must be banned</gray>
 
 ```js {5}
 var axios = require('axios');
@@ -36,13 +36,13 @@ axios(config)
 ## Comments API
 
 
-**First point**: In front-end processing, the `isOwner` field needs to be set to `1` in the POST request if the owner is not present. 
+**First point**: In frontend processing, the `isOwner` field needs to be set to `1` in the POST request if the owner is not present. 
 
 > This is the first layer of protection to impersonate the host comment; The second layer will appear in the previous 2 headers setting, with Token authentication, to protect owner comments
 
-**Second point**: you need to do the first layer of `XSS protection`, although the back end has done a layer of XSS protection, but to improve security, please be sure to do XSS processing in the frontend
+**Second point**: you need to do the first layer of `XSS protection`, although the backend has done a layer of XSS protection, but to improve security, please be sure to do XSS processing in the frontend
 
-**Third point**: It is recommended to get the `ipAddress` and the `userAgent` to fill it into the POST form before issuing the request to improve the back-end response speed, but this is limited by the *visitor aspect*. 
+**Third point**: It is recommended to get the `ipAddress` and the `userAgent` to fill it into the POST form before issuing the request to improve the backend response speed, but this is limited by the *visitor aspect*. 
 
 > You can also choose not to fetch the IP and user agent for this request.
 

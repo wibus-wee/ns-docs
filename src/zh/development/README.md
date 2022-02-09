@@ -1,12 +1,12 @@
 # Writing frontend projects
 
-The system takes the form of a frontend and backend separation without providing `template rendering options`, so front-end projects can be designed using any **framework** and **architecture**. 
+The system takes the form of a frontend and backend separation without providing `template rendering options`, so frontend projects can be designed using any **framework** and **architecture**. 
 
-However, although the development is relatively free, there are also many inconveniences, such as <u>interface call and data definition, routing convention</u>. So in this section, I'll go over how to develop front-end projects.
+However, although the development is relatively free, there are also many inconveniences, such as <u>interface call and data definition, routing convention</u>. So in this section, I’ll go over how to develop frontend projects.
 
 ## Routing convention
 
-The routing convention can greatly ensure that the site due to the **replacement** of different front-end topics lead to SEO abnormalities, dead links and other problems.
+The routing convention can greatly ensure that the site due to the **replacement** of different frontend topics lead to SEO abnormalities, dead links and other problems.
 
 | Path                     | Descrition                             | Mark        |
 | ------------------------ | -------------------------------------- | ----------- |
