@@ -1,42 +1,43 @@
 # Writing frontend projects
 
-The system takes the form of a frontend and backend separation without providing `template rendering options`, so frontend projects can be designed using any **framework** and **architecture**. 
+该系统采用了前端和后端分离的形式，而不提供模板呈现选项，因此开发人员可以使用任何框架和体系结构设计前端项目。
 
-However, although the development is relatively free, there are also many inconveniences, such as <u>interface call and data definition, routing convention</u>. So in this section, I’ll go over how to develop frontend projects.
+虽然开发是自由的，但也存在接口调用和数据定义、路由约定等不便。在本节中，我将介绍如何开发前端项目
 
-## Routing convention
+## 路由约定
 
-The routing convention can greatly ensure that the site due to the **replacement** of different frontend topics lead to SEO abnormalities, dead links and other problems.
+路由约定可以极大地保证网站因为更换不同的前端主题而导致SEO异常、死链接等问题。
+
 
 | Path                     | Descrition                             | Mark        |
 | ------------------------ | -------------------------------------- | ----------- |
-| `/`                      | Home                                   | Mandatory   |
-| `/posts`                 | Blog posts lists                       | Mandatory   |
-| `/posts/:category/:slug` | Blog posts details page                | Mandatory   |
-| `/pages/:slug`           | Independent pages details page         | Mandatory   |
-| `/notes/:nid`            | Dairy details page                     | Mandatory   |
-| `/feed`                  | RSS subscribe                          | Mandatory   |
-| `/:category/:slug`       | 302 -> `/posts/:category/:slug`        | Recommended |
-| `/category/:slug`        | Posts lists page in categories         | Recommended |
-| `/notes`                 | Dairy lists / Jump to the latest dairy | Recommended |
-| `/notes/latest`          | The latest dairy details page          | Recommended |
-| `/friends`               | Friends Link page                      | Recommended |
-| `/says`                  | Essays Details page                    | Option      |
-| `/sitemap`               | Site map                               | Recommended |
-| `/timeline`              | Timeline                               | Option      |
-| `/recently`              | Dynamic page                           | Option      |
-| `/favorite/:type`        | Additional page                        | Option      |
-| `/projects`              | Projects page                          | Option      |
-| `/projects/:id`          | Projects details page                  | Option      |
+| `/`                      | 首页                                   | 强制要求   |
+| `/posts`                 | 博客文章列表                            | 强制要求   |
+| `/posts/:category/:slug` | 博客文章详情页                          | 强制要求   |
+| `/pages/:slug`           | 独立页面详情页                          | 强制要求   |
+| `/notes/:nid`            | 日记详情页                              | 强制要求   |
+| `/feed`                  | RSS subscribe                          | 强制要求   |
+| `/:category/:slug`       | 302 -> `/posts/:category/:slug`        | 建议       |
+| `/category/:slug`        | 分类下的文章列表页面                     | 建议       |
+| `/notes`                 | 日记 列表 / Jump to the 最新的日记       | 建       |
+| `/notes/latest`          | 最新的日记详情页                         | 建议      |
+| `/friends`               | 友链页面                                | 建议       |
+| `/says`                  | 一言详情页                              | 可选       |
+| `/sitemap`               | 站点地图                                | 建议       |
+| `/timeline`              | 时间线                                  | 可选      |
+| `/recently`              | 动态页面                                | 可选      |
+| `/favorite/:type`        | 附加页面                                | 可选      |
+| `/projects`              | 项目页面                                | 可选      |
+| `/projects/:id`          | 项目详情页                              | 可选      |
 
-## Options and suggestions on the framework
+## 关于框架的选择和建议
 
-It is recommended to choose the modern framework with SSR function：
+建议选用具有SSR功能的现代框架:
 
 - React：NextJS, [RakkasJS](https://github.com/rakkasjs/rakkasjs), umi
 - Vue: Vite (vite-ssr), NuxtJS
 
-Small program:
+小程序:
 
 - React: Remax, taro
 - Vue: uni-app
