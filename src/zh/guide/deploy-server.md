@@ -1,4 +1,4 @@
-# Deploy GS-server
+# 部署 GS-server
 
 ```
   ____ ____                                     
@@ -7,33 +7,32 @@
 | |_| |___) |_____\__ \  __/ |   \ V /  __/ |   
  \____|____/      |___/\___|_|    \_/ \___|_| 
  
-GitHub Repo: https://github.com/wibus-wee/GS-server/
+GitHub 项目: https://github.com/wibus-wee/GS-server/
 ```
 
-## Require environments
+## 环境依赖
 
 - Node.js 16
 - PNPM
 - MySQL
 - PM2
 
-## ENV settings
+## ENV 设置
 
-- `DB_HOST`: database address (typically <thin>127.0.0.1</thin>)
-- `DB_PORT`: database port (usually <thin>3306</thin>)
-- `DB_USERNAME`: specifies the database username.
-- `DB_PASS`: specifies the database password
-- `DB_DATABASE`: specifies the name of a database table
-- `MAIL_SERVER`: indicates the mailbox server
-- `MAIL_PORT`: indicates the mailbox port number
-- `MAIL_ADD`: indicates the email address
-- `MAIL_PASS`: indicates the mailbox password
-- `CORS_SERVER`: allows cross-domain addresses
-- `PORT`: indicates the startup PORT
+- `DB_HOST`：数据库地址（一般为 127.0.0.1）
+- `DB_PORT`：数据库端口（一般 3306）
+- `DB_USERNAME`：数据库用户名（一般 root）
+- `DB_PASS`：数据库密码
+- `DB_DATABASE`：数据库表名
+- `MAIL_SERVER`：邮箱服务器
+- `MAIL_PORT`：邮箱端口号
+- `MAIL_ADD`：邮箱地址
+- `MAIL_PASS`：邮箱密码
+- `CORS_SERVER`：允许跨域的地址
 
-## Running in production (the first method)
+## 在生产模式下运行 (第一种)
 
-First, you need to clone `GS-server` to local server, then run commands
+首先你需要将项目克隆，之后运行以下命令
 
 ```bash
 pnpm i
@@ -41,7 +40,7 @@ pnpm build
 pnpm prod:pm2
 ```
 
-## Running in production (the second method)
+## 在生产模式下运行 (第二种)
 
 ```bash
 pnpm i
@@ -49,22 +48,21 @@ pnpm build
 pnpm start
 ```
 
-## Running in development
+## 在开发模式下运行
 
 ```bash
 pnpm i
 pnpm start:dev # recommended
 ```
 
-if application run error, you can try delete `dist` directory or make an issue in [GitHub repository](https://github.com/GS-server/issues)
+如果应用程序运行错误，您可以尝试删除' dist '目录或在 [GitHub Issues](https://github.com/GS-server/issues) 中提出问题
 
-## Some tips in development
+## 在开发中的一些tips
 
-1. You can open [https://localhost:3000/api-docs](https://localhost:3000/api-docs) to debug interfaces
-1. You can get API documents json on [https://localhost:3000/api-docs-json](https://localhost:3000/api-docs-json)
-2. If you don’t have server to run GS-server, you can use the application on vercel: [https://gs-server.vercel.app](https://gs-server.vercel.app). You can deploy it on vercel too.
+1. 你可以打开 [https://localhost:3000/api-docs](https://localhost:3000/api-docs) 来调试接口
+1. 你可以从 [https://localhost:3000/api-docs-json](https://localhost:3000/api-docs-json) 得到文档json文件
+2. 如果你没有环境来运行它，在线上你可以找到 [https://gs-server.vercel.app](https://gs-server.vercel.app) 来进行调试。你也可以自行部署在vercel中
 
-## Use GitHub Action to build Server
+## 使用GitHub Action来构建包
 
-All of these steps have been removed because the package size is so large and it doesn’t really effects for your server if you don’t include `modules`
-
+所有这些步骤都被删除了，因为包的大小太大，如果不包含`node_modules`，个人认为它对你的服务器没有真正的帮助
