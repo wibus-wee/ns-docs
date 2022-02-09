@@ -68,3 +68,20 @@ if application run error, you can try delete `dist` directory or make an issue i
 
 All of these steps have been removed because the package size is so large and it doesn’t really effects for your server if you don’t include `modules`
 
+## Unable to connect to the database
+
+If you start running server and receive anything like this:
+
+```log {2}
+[Nest] 32036  - 2022/02/09 下午1:20:08   ERROR [TypeOrmModule] Unable to connect to the database. Retrying (1)...
+Error: connect ECONNREFUSED 127.0.0.1:3306
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1157:16)  
+```
+
+You need to...
+
+1. Check your SQL service if running
+2. Check your SQL service performance setting
+3. Check ENV for errors
+
+If the above steps do not help you resolve the issue, please go to GitHub and post issues.
