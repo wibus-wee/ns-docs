@@ -1,6 +1,6 @@
-const { description } = require('../../package')
+import { defineConfig } from "vuepress/config";
 
-module.exports = {
+exports = defineConfig(ctx => ({
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
@@ -20,7 +20,13 @@ module.exports = {
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }]
   ],
-
+  locales: {
+    '/': {
+      lang: 'en-US',
+      title: 'Golden-Space',
+      description: 'A space for the future.',
+    },
+  },
   /**
    * Theme configuration, here is the default theme configuration for VuePress.
    *
@@ -33,40 +39,26 @@ module.exports = {
     docsDir: '',
     editLinkText: '',
     lastUpdated: true,
-    nav: [
-      {
-        text: 'Guide',
-        link: '/guide/',
+    locales: {
+      '/': {
+        label: 'English',
+        selectText: 'Languages',
+        ariaLabel: 'Select language',
+        editLinkText: 'Edit this page on GitHub',
+        lastUpdated: 'Last Updated',
+        // nav: NavItems4EN,
+        // sidebar: Sidebar4EN
       },
-      {
-        text: 'Development',
-        link: '/development/'
-      },
-    ],
-    sidebar: {
-      '/guide/': [
-        {
-          title: 'Guide',
-          collapsable: false,
-          children: [
-            '',
-            'deploy-server',
-            'deploy-admin'
-          ]
-        }
-      ],
-      '/development/': [{
-        title: 'Developement',
-        collapsable: false,
-        children: [
-          '',
-          'interface',
-          'headers',
-        ]
-      }]
-
-
-    }
+      '/zh/': {
+        label: '简体中文',
+        selectText: '选择语言',
+        ariaLabel: '选择语言',
+        editLinkText: '在 GitHub 上编辑此页',
+        lastUpdated: '上次更新',
+        // nav: NavItems4ZH,
+        // sidebar: Sidebar4ZH
+      }
+    },
   },
 
   /**
@@ -76,4 +68,4 @@ module.exports = {
     '@vuepress/plugin-back-to-top',
     '@vuepress/plugin-medium-zoom',
   ]
-}
+}))
