@@ -1,4 +1,4 @@
-# Deploy GS-admin
+# 部署 GS-admin
 
 ```
   ____ ____                  _           _       
@@ -7,20 +7,20 @@
 | |_| |___) |_____| (_| | (_| | | | | | | | | | |
  \____|____/       \__,_|\__,_|_| |_| |_|_|_| |_|
                                                  
-GitHub Repo: https://github.com/wibus-wee/GS-admin/
+GitHub 项目: https://github.com/wibus-wee/GS-admin/
 ```
 
-## Require environments
+## 环境依赖
 
 - Node.js 16
 - PNPM
 
-## ENV settings
+## ENV 设置
 
-## Running in developing
+## 在开发模式下启动
 
 ::: tip
-I advise you do not develop or research this project, because it has too many shit codes that you will be crazy.
+我建议你不要开发或探索这个项目，因为它有太多的屎山，真的看了会疯
 :::
 
 ```bash
@@ -28,19 +28,19 @@ pnpm i
 pnpm dev
 ```
 
-After you save a file, all the system will reload at once. Because of React & NextJS, the speed is fast. You won’t have time to ~~"touch fish"~~
+当你执行保存文件后，程序将会立即重载，而且得益于库，它的速度非常的快，以至于你~~没法摸鱼~~
 
-## Building in production
+## 在生产模式下编译
 
 ```bash
 pnpm i 
 pnpm build
 ```
 
-That you can find `dist` on your root directory. Take it out to your server and use it online.
+你可以在根目录下找到' dist '。将其放到服务器上并在线使用。
 
-## Why applications return Timeout?
+## 为什么会返回连接超时?
 
-First, You should check to see if the API service is running. Also, you should check your API service [ENV setting](/guide/deploy-server.html#env-settings) of cors. In addition, you may check GS-admin [ENV setting](/guide/deploy-admin.html#env-settings)
+首先，您应该检查API服务是否正在运行。此外，您应该检查您的API服务在CORS_SERVER的 [ENV setting](/guide/deploy-server.html#env-settings) . 此外你也要检查一下你的GS-admin对 [ENV](/guide/deploy-admin.html#env-settings) 的设置
 
-If everything above is checked and there is no problem, please send a issues to [GitHub repository](https://github.com/wibus-wee/GS-admin/issues)
+如果以上都检查过了，没有问题，请在[GitHub Issues](https://github.com/wibus-wee/GS-admin/issues)发起 issue
