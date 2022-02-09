@@ -3,7 +3,7 @@
  * @author: Wibus
  * @Date: 2022-02-09 08:52:54
  * @LastEditors: Wibus
- * @LastEditTime: 2022-02-09 09:09:22
+ * @LastEditTime: 2022-02-09 18:57:43
  * Coding With IU
  */
 import { NavItem } from "vuepress/config";
@@ -11,10 +11,10 @@ import { NavItem } from "vuepress/config";
 export const NavItems4ZH: NavItem[] = [
   {
     text: '指南',
-    link: '/guide/',
+    link: '/zh/guide/',
   },
   {
     text: '开发',
-    link: '/development/'
+    link: '/zh/development/'
   },
 ]
