@@ -31,7 +31,7 @@
     <div class="vt-box">
       <h2>Out of the box?</h2>
       <p>
-        Docker one-click deployment is expected, but manual deployment is still required
+        Docker one-click deployment, but manual deployment is still required now
       </p>
     </div>
     <div class="vt-box">

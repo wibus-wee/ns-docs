@@ -9,8 +9,8 @@
       这是一个向着未来的空间
     </p>
     <p class="actions">
-      <a class="get-started" href="/guide/">
-        Get Started
+      <a class="get-started" href="guide">
+        开始使用
         <svg
           class="icon"
           xmlns="http://www.w3.org/2000/svg"
@@ -23,26 +23,26 @@
           />
         </svg>
       </a>
-      <a class="setup" href="/guide/deploy-server.html">Install</a>
+      <a class="setup" href="guide/deploy-server.html">安装</a>
     </p>
   </section>
   <section id="highlights" class="vt-box-container">
     <div class="vt-box">
-      <h2>Out of the box?</h2>
+      <h2>开箱即用?</h2>
       <p>
-        Docker one-click deployment is expected, but manual deployment is still required
+        支持Docker一键式部署，但目前仍然需要手动部署
       </p>
     </div>
     <div class="vt-box">
-      <h2>Performance?</h2>
+      <h2>性能?</h2>
       <p>
-        The server side supports clustering (like) and the original performance ^80%
+        服务器端支持集群(应该)和原始前端性能80% up
       </p>
     </div>
     <div class="vt-box">
-      <h2>Indicators?</h2>
+      <h2>指标?</h2>
       <p>
-        Although the code shit mountain but also can guarantee SEO
+        虽然代码屎山，但也能保证SEO 100%
       </p>
     </div>
   </section>
