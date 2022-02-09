@@ -1,19 +1,19 @@
-# Interface Rules
+# 接口规则
 
-## Lists for pages / posts API
+## 文章/页面列表 API
 
-To get the lists of pages/posts, you need to pay attention to `Query Params`
+此方面接口需要注意 `Query Params` 传输
 
-The GET request for this interface (/list) requires:
+此接口（`/list`）的GET请求要求：
 
-- Type parameter
-  - `all` (display all, **default**)
-  - `num` (return length only)
-  - `list` (returns the list without returning the contents)
-  - `limit` (limit the list length, need to cooperate with `query.page`)
-- Page parameter (when type is `limit`)
+- type 参数
+  - all(全部显示，**默认**)
+  - num（仅返回长度）
+  - list（返回列表 不返回内容）
+  - limit（限制列表长度，需要配合query.page）
+- page 参数（当type为limit时）
 
-<gray>Query is seriously flawed and must be banned</gray>
+<gray>Query参数是有严重缺陷的，必须禁止</gray>
 
 ```js {5}
 var axios = require('axios');
@@ -33,18 +33,16 @@ axios(config)
 });
 ```
 
-## Comments API
+## 评论 API
 
 
-**First point**: In frontend processing, the `isOwner` field needs to be set to `1` in the POST request if the owner is not present. 
+在前端处理中，若非**主人驾到**，在POST请求中需要将isOwner字段设置为1。这是第一层防护冒充主人的评论；第二层将会出现在在先前*2 headers的设置*中，通过Token验证，再来防护主人评论
 
-> This is the first layer of protection to impersonate the host comment; The second layer will appear in the previous 2 headers setting, with Token authentication, to protect owner comments
+**第二点**：需要做第一层XSS防护，虽然在后端已经做了一层XSS防护，但是若要将安全性提高，请务必在前端也要进行XSS处理
 
-**Second point**: you need to do the first layer of `XSS protection`, although the backend has done a layer of XSS protection, but to improve security, please be sure to do XSS processing in the frontend
+**第三点**：发起请求前**建议获取**`ipAddress`, `userAgent`并将其填入POST表单 以提高后端响应速度，但此受限于访客方面问题
 
-**Third point**: It is recommended to get the `ipAddress` and the `userAgent` to fill it into the POST form before issuing the request to improve the backend response speed, but this is limited by the *visitor aspect*. 
-
-> You can also choose not to fetch the IP and user agent for this request.
+> 您还可以选择不为请求获取IP和用户代理。
 
 ```js {6,9}
 var axios = require('axios');
@@ -83,5 +81,5 @@ axios(config)
 ```
 
 ::: warning
-The above example does not do `XSS filtering` for the article content, but be aware of this in real development.
+上面的示例没有对文章内容进行`XSS过滤`，但是在实际开发中要注意这一点。
 :::

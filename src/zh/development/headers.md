@@ -1,10 +1,10 @@
-# The headers setting in request
+# 请求中的头设置
 
 ::: warning
-When requesting the interface, if the administrator has logged in, please be sure to add the `Authorization` field in headers and its authorized Token Type is `Bearer`. 
+请求接口时，如果管理员已经登录，请务必在头中添加`Authorization`字段，其授权Token Type为`Bearer`。
 :::
 
-Although detection of this Token is not fully used in backend processing, to prevent future version migration problems, Write the standard headers.
+尽管Token的检测在后端处理中没有完全使用，为了防止将来的版本迁移问题，编写标准头是必要的。
 
 ```js {6,7,8}
 let axios = require('axios');
