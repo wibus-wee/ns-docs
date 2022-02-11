@@ -3,11 +3,10 @@
  * @author: Wibus
  * @Date: 2022-02-09 08:52:54
  * @LastEditors: Wibus
- * @LastEditTime: 2022-02-09 18:57:43
+ * @LastEditTime: 2022-02-11 16:05:37
  * Coding With IU
  */
 import { NavItem } from "vuepress/config";
-// NEED TO CHANGE ROUTE!!
 export const NavItems4ZH: NavItem[] = [
   {
     text: '指南',
@@ -17,4 +16,8 @@ export const NavItems4ZH: NavItem[] = [
     text: '开发',
     link: '/zh/development/'
   },
+  {
+    text: '修改日志',
+    link: '/zh/changelog/'
+  }
 ]
