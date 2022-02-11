@@ -35,7 +35,7 @@ export = defineConfig(ctx => ({
    */
   themeConfig: {
     logo: 'https://gitee.com/wibus/blog-assets-goo/raw/master/asset-pic/20220208171108.png',
-    repo: 'wibus-wee/GS-server',
+    repo: 'wibus-wee/GS-docs',
     editLinks: true,
     docsDir: 'src',
     lastUpdated: true,
