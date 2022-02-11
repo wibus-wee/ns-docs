@@ -3,7 +3,7 @@
  * @author: Wibus
  * @Date: 2022-02-09 08:57:35
  * @LastEditors: Wibus
- * @LastEditTime: 2022-02-09 09:05:17
+ * @LastEditTime: 2022-02-11 15:49:18
  * Coding With IU
  */
 import { SidebarConfigArray } from 'vuepress/config'
@@ -33,6 +33,17 @@ export function getDevelopmentSidebar (groupA: string): SidebarConfigArray {
         'interface',
         'headers',
       ]
+    },
+  ]
+  return sidebar
+}
+
+export function getAnySidebar (title: string, children: any[]): SidebarConfigArray{
+  const sidebar: SidebarConfigArray = [
+    {
+      title: title,
+      collapsable: false,
+      children: children,
     },
   ]
   return sidebar
