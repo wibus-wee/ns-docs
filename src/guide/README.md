@@ -10,6 +10,8 @@ It has a high degree of development freedom, you can develop your own front/midd
 
 According to GitHub Data (2021.2.8), GoldenSpace includes: server(release), admin(demo) and web(private)
 
+> Because wibus's learning is busy, GoldenSpace will be turned into a slow develop stage
+
 [GS-server](https://github.com/wibus-wee/GS-server): service side,  by wibus-wee. Built by NodeJS, NestJS, MySQL, TypeScript.
 
 [GS-admin (web)](https://github.com/wibus-wee/GS-admin): Middle background web side, by wibus-wee. Built by React, TypeScript, NextJS
